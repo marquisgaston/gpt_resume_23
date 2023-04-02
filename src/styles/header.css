@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 60px;
+  height: auto;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 .header-content {
-  flex: 1;
+  flex-basis: 50%;
 }
 
 .header-content h1 {
@@ -20,8 +20,9 @@
 }
 
 .header-right {
+  flex-basis: 50%;
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .header-right ul {
@@ -38,8 +39,8 @@
   cursor: pointer;
 }
 
-.header-right li:hover {
-  color: #007bff;
+.header-right li:first-child {
+  margin-left: 0;
 }
 
 .header-overlay {
@@ -50,4 +51,21 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .header-right {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
 }
