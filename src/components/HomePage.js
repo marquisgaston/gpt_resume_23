@@ -1,9 +1,10 @@
 import React from "react";
+import Profile from "./Profile";
 
 function HomePage() {
     return (
-        <div>
-            "hi"
+        <div className="homePage-container">
+            <Profile />
         </div>
     )
 }

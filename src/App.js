@@ -11,6 +11,7 @@ import './App.css';
 function App() {
   const [backgroundImage, setBackgroundImage] = useState('');
 
+
   useEffect(() => {
     async function fetchRandomImage() {
       const imageUrl = await getRandomImage();
@@ -26,12 +27,13 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
+
   return (
     <Router>
       <div className="App">
-        <div className="header-mainpage-wrapper" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="header-currentpage-wrapper" style={{ backgroundImage: `url(${backgroundImage})` }}>
           <Header />
-          <MainPage />
+          <CurrentPage />
         </div>
         <div className="footer-wrapper">
           <Footer />
@@ -41,11 +43,11 @@ function App() {
   );
 }
 
-function MainPage() {
+function CurrentPage() {
   return (
-    <div className="mainpage">
+    <div className="CurrentPage">
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage/>}/>
       </Routes>
     </div>
   );

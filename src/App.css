@@ -1,5 +1,11 @@
-@import url('./styles/header.css');
+@import url('./styles/header.scss');
+@import url('./styles/homePage.scss');
 
-.header-mainpage-wrapper {
+.app {
+  display: grid;
+}
+
+.header-currentpage-wrapper {
   min-height: 100svh;
+  min-width: 100svw;
 }
