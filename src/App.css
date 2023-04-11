@@ -1,11 +1,14 @@
 @import url('./styles/header.scss');
 @import url('./styles/homePage.scss');
+@import url('./styles/searchBox.scss');
 
 .app {
   display: grid;
+  overflow: hidden;
+  min-width: 100svw;
 }
 
 .header-currentpage-wrapper {
   min-height: 100svh;
-  min-width: 100svw;
+  min-width: 100svw - 100px;
 }

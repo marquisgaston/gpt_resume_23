@@ -1,10 +1,14 @@
 import React from "react";
+import profilePic from "../images/profilepic.png";
 
 function Profile() {
     
     return (
         <div className="profile-container">
-            <img src="https://source.unsplash.com/random/800x600" alt="Avatar" />
+            <img src={profilePic} alt="Avatar" />
+            <div className="profile-text">
+                "Pixel-Wrangler and Byte-Tamer: Engineering Digital Frontiers with Precision and Creativity"
+            </div>
         </div>
     )
 }
