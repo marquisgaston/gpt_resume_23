@@ -9,7 +9,6 @@ import './App.css';
 function App() {
   const [backgroundImage, setBackgroundImage] = useState('');
 
-
   useEffect(() => {
     async function fetchRandomImage() {
       const imageUrl = await getRandomImage();

@@ -1,6 +1,7 @@
 @import url('./styles/header.scss');
 @import url('./styles/homePage.scss');
 @import url('./styles/searchBox.scss');
+@import url('./styles/searchStyles.scss');
 
 .app {
   display: grid;
